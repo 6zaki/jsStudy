@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JS 練習</title>
+
+	<style>
+	.box {
+		width: 100px;
+		height: 100px;
+		background: skyblue;
+		cursor: pointer;
+		transition: 0.8s;
+	}
+	.circle {
+		background: pink;
+		border-radius: 50%;
+		transform: rotate(360deg);
+	}
+	</style>
+</head>
+<body>
+	<div id="target" class="box"></div>
+
+	<script>
+		'use strict';
+
+		document.getElementById('target').addEventListener('click', function() {
+			// document.getElementById('target').style.background= 'pink';
+			// document.getElementById('target').style.borderRadius= '50%';
+			document.getElementById('target').classList.add('circle');
+		});
+	</script>
+	<!--
+		コード解説
+		document = 文章全体
+		getElementById = idを持つ要素を取得する
+		addEventListener = 何かが起きたら処理する
+		function = 複数の処理をまとめるための関数
+		classList.add = 対象にクラスを追加
+	 -->
+</body>
+</html>
